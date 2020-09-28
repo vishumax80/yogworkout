@@ -82,15 +82,22 @@ a{
     color: #DCDCDC;
     font-size: 30px;
     border-radius: 50px;
-    border:none;
-   
+    border:none;  
+    cursor: pointer;
+    transition: .3s ease-in;
 }
+.hdrbtn:hover{
+    background: black;
+    color:#FC4539;
+    border:1px solid #DCDCDC;
+}
+
 
 /************
  Service section
  ************/
 .services{
-    height: 600px;
+    /* height: 600px; */
     border:1px solid transparent;
     background: #F8F8F8;
 }
@@ -98,7 +105,9 @@ a{
 /* Service main container */
 .serv-sec{
         background: #F8F8F8;
-        height:500px
+        height:auto;
+        /* border:1px solid blueviolet;
+        background: lightgreen; */
 }
 
 .serv-head{
@@ -114,60 +123,60 @@ a{
     font-family: 'Roboto', sans-serif; 
     line-height: 31px;
     margin-bottom: 20px;  
-    
+    color: #444;    
 }
 
 .serv-head .line{
-    width:100px;
+    width:50px;
     background: #FC4539;
     height: 2px;
     margin-top: 10px;
-    margin-bottom: 10px;    
+    margin-bottom: 20px;    
     margin: auto;
 }
 
-
-
 .serv-head p{
-    margin: 0 auto;
     max-width: 900px;
     text-align: center;
-    margin-top: 20px;
     font-weight: 400;
     word-spacing: 2px;
     font-family: 'Roboto', sans-serif;
+    margin : 30px auto;
     
 }
 .col3-serv{
     
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
     align-items: center;
-    margin: -102px 107px 0 114px;
-    /* margin: -102px 20px 0 20px; */
-    
+    flex-flow: wrap;
+    margin: 0 20px 20px 20px;
+    /* height: auto; */
 }
-
+    
 .col3-serv .col-s{
     background: #fff;
     height:280px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     width:370px;
-   
-
+    position: relative;
+    margin-bottom: 90px;
 }
 .col-s .col-info{
     
-    height:50px;
-    width:370px;
+    /* height:50px;
+    width:370px; */
+    width:100%;
     margin-top:15px ;
     
 }
+
 .col3-serv .col-s .col-info h3{
 font-weight: 700px;
 border-top-right-radius:50px; 
 text-align: center;
 font-family: 'Roboto', sans-serif;
+margin-bottom: 10px;
 }
 
 .col3-serv .col-s .col-info p{
@@ -175,32 +184,76 @@ font-family: 'Roboto', sans-serif;
     color:grey;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.col3-serv .col-s .col-info p:hover{
+   
+    color:#FC4539;
+    
 }
 
 .col3-serv .col-s img{
        width:370px;
-       height: 200px;     
+       height: 200px;  
+       display: block;   
 }
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: #FC4539;
+    overflow: hidden;
+    width:0;
+    height: 201px;
+    transition: .4s ease;
+    cursor: pointer;
+    opacity: .7;
+    margin-bottom: 78px;
+    
+  }
+  .col-s:hover .overlay {
+    left: 0;
+    width: 100%;
+    
+  }
+  .text {
+    white-space: nowrap; 
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    border:1px solid #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 20px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
 
 /************
  Facility section
  ************/
  .facility{
      width:100%;
-     height:650px;
      background-image: linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,.5),rgba(0,0,0,.7)),url("./images/facilityimg.jpg");
      background-position: center;
      background-repeat: no-repeat;
-     background-size: cover;   
-    
+     background-size: cover;       
  }
  .one-sec{
     border:1px solid transparent;
-    width:100%;  
+    /* width:100%;   */
 }
 .col-txt{  
-    margin: 50px 50px;
-    width:100%;
+    /* margin: 100px 50px 50px 150px; */
+   margin: 50px auto;
    
 }
 
@@ -215,8 +268,8 @@ font-family: 'Roboto', sans-serif;
 }
 
 .col-txt p{
-    color:white;
-    margin:auto;
+    color:#aaa;
+    margin: 0 0 20px;
     font-family: 'Open Sans', sans-serif;
     font-size:16px;
     
@@ -233,7 +286,13 @@ font-family: 'Roboto', sans-serif;
     color:white;   
     border:none;
     margin-top: 20px;
-    
+    cursor: pointer; 
+    transition: all .3s ease-in;   
+}
+.color-btn:hover{
+    background: black;
+    color:#FC4539;
+    border:.1px solid #DCDCDC;
 }
 
 /************
@@ -255,16 +314,16 @@ font-family: 'Roboto', sans-serif;
 .main-head h2{
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color:#111111;
+    color:#444;
     margin-top: 20px;
     font-size: 28px;
     padding-bottom:20px;
 }
 
 .main-head .line{
-    width:100px;
+    width:50px;
     background: #FC4539;
-    height: 2px;
+    height: 3px;
     margin-top: 20px;
     margin-bottom: 10px;    
     margin: auto;
@@ -282,14 +341,15 @@ font-family: 'Roboto', sans-serif;
 
 .col4-sec{
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    justify-content: space-around; 
+    margin-top:50px;
     position: relative;
+    
 }
 
 .col-abt::after{
     content: '';
-    height: 400px;
+    height: 350px;
     left: 0px;
     position: absolute;
     top: 0;
@@ -303,17 +363,19 @@ font-family: 'Roboto', sans-serif;
 .col-abt:hover::after{
     background-color: rgba(251, 91, 33, 0.8);
     opacity: 1;
-    transform: translateX(10%);
+    transform: translateX(-4%);
 }
 
 
 .col-abt{
-    height: 550px;
+    height: 400px;
     position: relative;
+    
+    
 }
 
 .col-abt .abt-info{
-    bottom: 150px;
+    bottom: 15px;
     color: #ffffff;
     left: 0;
     position: absolute;
@@ -327,7 +389,7 @@ border:50px;
 text-align: left;
 font-family: 'Roboto', sans-serif;
 width:160px;
-font-size: 30px;
+font-size: 20px;
 display: inline-block;
 
 }
@@ -344,9 +406,10 @@ display: inline-block;
 }
 .col4-sec .col-abt img{
        width:300px;
-       height: 400px;     
-       
+       height: 350px;     
+       box-shadow: 2px 4px #888888;
 }
+
 
 /************
  Contact section
@@ -361,7 +424,6 @@ display: inline-block;
     width:100%;
     height: auto;
     position: relative;
-   
     
 }
 .content::after{
@@ -386,13 +448,13 @@ display: inline-block;
     color:white;
      
 } 
-.head-text h1{
+.head-text h3{
     position: absolute;
     left:12%;
     top:20%;
     z-index: 999;
-    font-family: Roboto, sans-serif;
-    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
     margin-top: 20px;
     font-size: 36px;
     font-weight: 700;
@@ -408,7 +470,8 @@ display: inline-block;
     max-width: 1200px;
     font-size:18px;
     line-height: 20px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 .brdr-btn{
     border: 3px solid #fb5b21;
@@ -416,7 +479,7 @@ display: inline-block;
     display: inline-block;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-top: 0px;
@@ -452,14 +515,17 @@ testimonial section
 }
 .test-head h1{
     margin-bottom: 30px;
+    font-family:  'Roboto', sans-serif;
+    color:#444;
 }
 .line{
     width:100px;
-    background: #FC4539;
+    background: transparent;
     height: 3px;
     margin-top: 10px;
     margin-bottom: 8px;    
     margin: auto;
+    
 }
 .testcol2{
     margin:auto;
@@ -497,7 +563,7 @@ testimonial section
     width:50px;
     margin-top: 10px;
     margin-bottom: 10px; 
-    background: #000;  
+    background:  #FC4539;  
 } 
 .test-col .box-text{
     line-height: 30px;
