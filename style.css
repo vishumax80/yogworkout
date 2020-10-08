@@ -16,6 +16,11 @@ Basic Setup
         box-sizing: inherit;
    
 }
+.img-fluid{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
 body{
     box-sizing: border-box;
 }
@@ -99,12 +104,12 @@ a{
 .services{
     /* height: 600px; */
     border:1px solid transparent;
-    background: #F8F8F8;
+    background: #FFFFFF; 
 }
 
 /* Service main container */
 .serv-sec{
-        background: #F8F8F8;
+        background:#FFFFFF;
         height:auto;
         /* border:1px solid blueviolet;
         background: lightgreen; */
@@ -300,7 +305,8 @@ margin-bottom: 10px;
  ************/
 .about{
  
-    background:#EAECE7;
+    background: #f9f9f9;
+    margin-bottom: 80px;
 }
 .col4sec{
    
@@ -369,23 +375,36 @@ margin-bottom: 10px;
 
 
 .col-abt{
-    height: 400px;
+    height: 300px;
     position: relative;
-    
-    
+    /* border: 1px solid grey;  */
+    box-shadow: 3px 3px 12px;
+    margin-bottom:20px;
 }
 
 .col-abt .abt-info{
-    bottom: 15px;
+    /* bottom: 15px; */
     color: #ffffff;
     left: 0;
     position: absolute;
     text-align: left;
 }
-
-
+.col-abt .abt-info i{
+    margin-right: 20px;
+    margin-left:5px;
+    font-size: 20px;
+}
+.col-abt .abt-info  .lni-facebook-original{
+    color: #3b5998;
+}
+.col-abt .abt-info .lni-twitter-original{
+    color: #00aced;
+}
+.col-abt .abt-info .lni-instagram-filled{
+    color: #fb3958;
+}
 .col4-sec .col-abt h3{
-background: #FC4539;
+background: #d17570;
 border:50px; 
 text-align: left;
 font-family: 'Roboto', sans-serif;
@@ -399,15 +418,15 @@ display: inline-block;
     color:white;    
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    background: #000;
+    background: rgb(20, 15, 27);
     width:100px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
    
 
 }
 .col4-sec .col-abt img{
        width:300px;
-       height: 350px;     
+       /* height: 350px;      */
        /* box-shadow: 2px 4px #888888; */
 }
 
