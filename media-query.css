@@ -1,14 +1,12 @@
 /* Desktop/pc/laptop */
 
 @media all and (max-width:1600px){
-    col-s .col-info {
+    .col-s .col-info {
         width: 32%;
         margin-top: 15px;
     }
 }
 @media all and (max-width:1400px){
-     /* Everything acceptable */
-
     .col-txt {
         /* margin: 100px 50px 50px 150px; */
         margin: 50px 50px;
@@ -34,6 +32,10 @@
         margin-left:30px;
         margin-right:30px;
      }
+
+     .col4-sec .col-abt{
+        
+     }
      .testcol2 {
         margin-left:-86px;
         width: 100%;
@@ -48,18 +50,23 @@
      
        margin-left:30px;
        margin-right:30px;
-       flex-wrap: wrap;
        
     }
-    .col4-sec .col-abt img a{
-       /* width:47%; */
+
+    .col4-sec .col-abt.img{
+       width:40%;
+       margin:0px;
+    }
+
+    .col4-sec .col-abt img {
+       /* width:100% */
   
     }
     .col-abt .abt-info {
         /* bottom: 230px; */
        
     }
-    .col-abt::after{
+    /* .col-abt::after{
       
         height: 300px;
         left: 0px;
@@ -67,7 +74,7 @@
         top: 0;
         width: 250px;
        
-    }
+    } */
     .testcol2 {
         margin:auto;
         width: 100%;
@@ -83,7 +90,7 @@
 @media all and (max-width:1200px){
     .col3-serv .col-s {
        
-        width: 250
+        width: 250;
     }
     .col3-serv .col-s img {
         width: 250;
@@ -95,7 +102,7 @@
         
     }
     .col3-serv {
-        width: 100%;
+        /* width: 100%; */
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -105,7 +112,7 @@
         margin-right:30px;
         flex-wrap: wrap;
      }
-     .col4-sec .col-abt img a {
+     .col4-sec .col-abt img  {
             /* width:50%; */
          
      }
@@ -137,23 +144,24 @@
 @media all and (max-width:991px){
     .col3-serv .col-s {
        
-        width: 250px;
+        width: 60%;
+        
       
     }
     .col3-serv .col-s img {
-        width: 250px;
+        width:100%;
         
     }
     .col-s .col-info {
         
-        width: 250px;
+        width: 100%;
         
     }
    
     .col3-serv {
         /* width: 100%;
         margin-left: 20px; */
-        display: flex;
+        
         flex-flow: column;
 
     }
@@ -191,7 +199,12 @@
         width: 180px;   
     }
     }
-
+    @media (min-width:900px){
+        /* .col4-sec{
+            display: flex;
+            justify-content: space-between;
+        } */
+    }
 
 @media all and (max-width:768px){
 
@@ -215,10 +228,10 @@
 /* Tablets and ipads */
 @media(min-width:769px){
     .col3-serv {
-        /* display: flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap:wrap; */
+        flex-wrap:wrap;
     }
 
     .col3-serv .col {
@@ -317,27 +330,27 @@
 
     .col4-sec {
       
-        margin-left:30px;
+        /* margin-left:30px;
         margin-right:30px;
-        flex-wrap: wrap;    
+        flex-wrap: wrap;     */
         }
 
     
-    /* .col4-sec .col {
+    .col4-sec .col {
         height: 200px;
         margin: 20px;
         width: 200px;
         
-    } */
-
-    .col4-sec .col-abt img {
-        /* width: 300px;
-        height: 400px; */
     }
 
-     .col-abt {
-     /* width: 285px;
-    margin: auto; */
+    .col4-sec .col-abt img {
+        /* width:100%; */
+    }
+
+     .col4-sec .col-abt ,img {
+     /* width:100%; */
+     margin-bottom: 20px;
+     
     }
     .col4-sec .col-abt h3{     
          /* font-size: 30px; */
@@ -439,7 +452,10 @@
         margin-left:30px;
         margin-right:30px;
         flex-direction: column;
-         
+       
+        }
+        .col-abt { 
+              width:100%;
         }
 }
 @media(max-width:648){
@@ -702,27 +718,31 @@
         
 
         .col4-sec .col-abt img {
-            width: 200px;
-            height: 200px;
+            width: 100%;
+        
+        }
+        .col4-sec .col-abt{
+            width:100%;
+            
         }
         .col-abt {
            
-            margin-bottom: -145px;
+            /* margin-bottom: -145px; */
         }
         .col-abt .abt-info {
-            bottom: 155px;
+            /* bottom: 155px;
             left: 0;
             position: absolute;
-            text-align: left;
+            text-align: left; */
         }
         .col4-sec {
            
-            margin: 40px;
+            /* margin: 40px; */
         }
         .col4-sec .col-abt h3 {
            
-            width: 96px;
-            font-size: 16px;
+            /* width: 96px;
+            font-size: 16px; */
         }
 
         .col4-sec .col-abt p {
